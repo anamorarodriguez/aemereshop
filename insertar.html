@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>añadir</title>
+</head>
+<body>
+    <h1>TIENDA DE ROPA</h1>
+    <button type="submit"><a href="aemere.php">INICIO</a></button>
+    <button type="submit"><a href="administrador.php">TABLA</a></button>
+
+    <h2>AÑADIR PRODUCTO</h2>
+    <p>INGRESE LOS DATOS DE LA PRENDA</p>
+
+    <form action="insertar.php" method="post" enctype="multipart/form-data">
+        <label for="IMAGEN"></label>
+        <input type="file" name="imagen" placeholder="imagen" required>
+
+        <label for="PRODUCTO"></label>
+        <input type="text" name="producto" placeholder="producto" required>
+
+        <label for="MATERIAL"></label>
+        <input type="text" name="material" placeholder="material" required>
+
+        <label for="DESCRIPCION"></label>
+        <input type="text" name="descripcion" placeholder="descripcion" required>
+
+        <label for="PRECIO"></label>
+        <input type="text" name="precio" placeholder="precio" required>
+
+        <input type="submit" name="submit" value="AÑADIR">
+
+    </form>
+</body>
+</html>
